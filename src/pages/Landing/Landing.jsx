@@ -52,8 +52,7 @@ const Landing = ({ start }) => {
   
   const response = await fetch("http://matrix-auth-api-env.eba-psneaguu.us-east-2.elasticbeanstalk.com/security/login", {
     method: "POST",
-    strictSSL: false, 
-    rejectUnauthorized: false,
+    mode: 'no-cors',
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData),
   });

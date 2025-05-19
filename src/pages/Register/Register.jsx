@@ -81,12 +81,10 @@ const Register = () => {
       try {
         const response = await fetch("http://matrix-auth-api-env.eba-psneaguu.us-east-2.elasticbeanstalk.com/user/register", {
           method: "POST",
-          strictSSL: false, 
-          rejectUnauthorized: false,
+          mode: 'no-cors',
           headers: { 
             "Content-Type": "application/json",
             'Authorization': `Bearer ${token}`
-            
           },
           body: JSON.stringify(formData),
         });
