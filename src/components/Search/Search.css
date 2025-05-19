@@ -1,0 +1,41 @@
+.containerSearch{
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    width: 250px;
+    height: 25px;
+    
+}
+
+.btn-search{
+    height: 25px;
+    
+}
+.btn-reset{
+    height: 25px;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 576px){
+    input{
+        width: 130px;
+        height: 20px;
+        margin:auto;
+    }
+
+    .containerSearch{
+        width: 400px;
+        display: flex;
+    }
+    .btn-search{
+        height: 20px;
+        margin-left: 5px;
+    }
+    .btn-reset{
+        height: 20px;
+        margin-left: 10px;
+    }
+}
